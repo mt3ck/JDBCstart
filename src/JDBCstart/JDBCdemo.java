@@ -13,9 +13,10 @@ import java.sql.*;
 public class JDBCdemo {
     
     private static String url = "jdbc:oracle:thin:@//acaddb2.asu.edu:1521/orcl";
-    private static String database = "";
-    private static String user = "";
-    private static String pass = "";
+    //Change for other databases / users.
+    private static String database = dbCredentials.database;
+    private static String user = dbCredentials.user;
+    private static String pass = dbCredentials.pass;
     
     public static void main(String[] args) throws SQLException{
         Connection con = null;
